@@ -1,0 +1,86 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #036FCF;
+}
+
+
+/* Global CSS  */
+
+/* navbar  */
+.logo-brand{
+    filter: drop-shadow(0px 26px 28px rgba(6, 15, 31, 0.37));
+}
+
+/* typography */
+h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 121%;
+    text-transform: capitalize;
+    color: #01999A;
+}
+h2{
+
+}
+
+.text-line{
+    color: transparent;
+	-webkit-text-stroke: 1px #05979C;
+	-webkit-text-fill-color: unset;
+}
+
+/* button  */
+.btn{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+.btn-primary{
+    background-color: unset;
+    border-color: transparent;
+    color: #FFC65F;
+    background: url('../images/img-btn.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 26px 0px;
+    min-width: 206px;
+}
+.btn-primary:hover{
+    background-color: unset;
+    border-color: transparent;
+    color: #FFC65F;
+}
+
+/* Section CSS  */
+
+/* hero section  */
+section.hero{
+    background: url('../images/bg-hero.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 165px 0px 135px;
+}
+section.hero img{
+    max-width: 605px;
+}
+
+/* Archer section  */
+section.archer{
+    padding: 130px 0px 170px;
+}
+
+/* Breakpoints  */
+
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 1400px) {  }
