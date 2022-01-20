@@ -22,13 +22,41 @@ h1{
     color: #01999A;
 }
 h2{
-
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+h3{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFFFFF;
 }
 
 .text-line{
     color: transparent;
 	-webkit-text-stroke: 1px #05979C;
 	-webkit-text-fill-color: unset;
+}
+
+p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 171.5%;
+    color: #FFFFFF;
+}
+.p-18{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 171.5%;
+    color: #FFFFFF;
 }
 
 /* button  */
@@ -71,6 +99,16 @@ section.hero img{
 /* Archer section  */
 section.archer{
     padding: 130px 0px 170px;
+}
+section.archer p{
+    max-width: 260px;
+}
+.icon-circle{
+    padding: 20px;
+    height: 61px;
+    width: 61px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* Breakpoints  */
