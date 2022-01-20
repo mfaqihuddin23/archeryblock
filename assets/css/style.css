@@ -37,6 +37,13 @@ h3{
     text-transform: capitalize;
     color: #FFFFFF;
 }
+h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
 
 .text-line{
     color: transparent;
@@ -56,6 +63,13 @@ p{
     font-weight: 500;
     font-size: 18px;
     line-height: 171.5%;
+    color: #FFFFFF;
+}
+.p-12{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 137.5%;
     color: #FFFFFF;
 }
 
@@ -110,6 +124,25 @@ section.archer p{
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.3);
 }
+
+/* Tokenomics section  */
+section.tokenomics{
+    background: linear-gradient(80.24deg, #408CFF 13.46%, #08B0C7 93.72%);
+    box-shadow: 0px 37px 79px rgba(0, 0, 0, 0.15);
+    padding: 160px 0px;
+}
+.grad-line{
+      
+}
+.grad-box{
+    padding: 40px;
+    background: linear-gradient(97.71deg, rgba(255, 255, 255, 0.2) 21.7%, rgba(255, 255, 255, 0) 100.77%);
+    border: 4px solid #00FFF0;
+    box-shadow: 0px 60px 73px -31px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+}
+
+
 
 /* Breakpoints  */
 
