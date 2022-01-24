@@ -52,6 +52,15 @@ h4{
     line-height: 120%;
     color: #FFFFFF;
 }
+h5{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 42px;
+    /* identical to box height, or 262% */
+    letter-spacing: 1.05px;
+    color: #FFFFFF;
+}
 
 .text-line{
     color: transparent;
@@ -250,7 +259,25 @@ section.about-us p{
 .footer-logo{
     margin-top: -85px;
 }
-
+section.footer p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #D9D9D9;
+    max-width: 224px;
+}
+.footer-link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    /* or 183% */
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
 
 
 /* Breakpoints  */
