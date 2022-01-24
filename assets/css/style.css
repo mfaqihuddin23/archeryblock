@@ -164,7 +164,7 @@ section.about-us{
     width: 100% !important;
     max-width: 1440px !important;
 }
-section.about-us h2{
+section.about-us h2.text-center{
     color: #12417F;
     margin-top: 240px;
     margin-bottom: 69px;
@@ -200,6 +200,42 @@ section.about-us p{
     /* height:  85px; */
     max-width: 263px;
     padding: 29px 50px;
+}
+.accordion-body{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 171.5%;
+    /* identical to box height, or 31px */
+    color: #01999A;
+    border-radius: 20px !important;
+    padding: 34px;
+}
+.accordion-item {
+    border-radius: 20px !important;
+}
+.accordion-button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 171.5%;
+    /* identical to box height, or 31px */
+    color: #01999A;
+    border-radius: 20px !important;
+    padding: 34px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    color: #01999A;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.accordion-button::after{
+    background-image: url('../images/icon-plus.svg');
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../images/icon-plus.svg');
 }
 
 
