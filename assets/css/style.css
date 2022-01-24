@@ -8,9 +8,12 @@ body{
 /* Global CSS  */
 
 .swiper {
-    width: 600px;
+    width: 1440px;
     height: 300px;
   }
+.swiper-slide{
+    width: 100% !important;
+}
   
 /* navbar  */
 .logo-brand{
@@ -157,6 +160,10 @@ section.about-us{
     background-position: top center;
     padding: 240px 0px 364px;
 }
+.our-partners{
+    width: 100% !important;
+    max-width: 1440px !important;
+}
 section.about-us h2{
     color: #12417F;
     margin-top: 240px;
@@ -186,6 +193,15 @@ section.about-us p{
     border-radius: 35px;
     padding: 71px 36px 38px;
 }
+.logo-block{
+    background: #EAF6FA;
+    box-shadow: 0px 47px 58px -27px rgba(0, 0, 0, 0.29);
+    border-radius: 35px;
+    /* height:  85px; */
+    max-width: 263px;
+    padding: 29px 50px;
+}
+
 
 
 /* Breakpoints  */
