@@ -55,6 +55,9 @@ h4{
 	-webkit-text-stroke: 1px #05979C;
 	-webkit-text-fill-color: unset;
 }
+.white{
+    color: #FFFFFF !important;
+}
 
 p{
     font-style: normal;
@@ -147,6 +150,42 @@ section.tokenomics{
     border-radius: 35px;
 }
 
+/* section about us  */
+section.about-us{
+    background: url('../images/bg-roadmap.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 240px 0px 364px;
+}
+section.about-us h2{
+    color: #12417F;
+    margin-top: 240px;
+    margin-bottom: 69px;
+}
+section.about-us h4{
+    color: #01999A;
+}
+section.about-us p{
+    color: rgba(100, 202, 188, 0.6);
+}
+.p-time{
+    color: #01999A !important;
+}
+.year-wrap{
+    background: url('../images/img-btn-roadmap.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18px;
+    margin-bottom: -30px;
+    position: relative;
+    /* z-index: 10; */
+}
+.year-box{
+    background: linear-gradient(97.71deg, rgba(255, 255, 255, 0.9) 21.7%, rgba(255, 255, 255, 0.9) 100.77%);
+    box-shadow: 0px 60px 73px -31px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    padding: 71px 36px 38px;
+}
 
 
 /* Breakpoints  */
