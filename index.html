@@ -145,9 +145,10 @@
             </div>
           </div>
         </div>
+        <canvas id="myChart" width="400" height="400"></canvas>
         <div class="row mt-5">
           <div class="col-5">
-            <img src="assets/images/img-diagram.svg" alt="">
+            <img src="assets/images/sample-diagram.svg" alt="">
           </div>
           <div class="col-6 offset-1">
             <img src="assets/images/sample-diagram.svg" alt="">
@@ -359,6 +360,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/slider-swip.js"></script>
+    <script src="assets/js/piechart.js"></script>
+    <!-- <script src="assets/js/utils-chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+    
 
   </body>
 </html>

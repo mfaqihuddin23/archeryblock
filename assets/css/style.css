@@ -252,18 +252,41 @@ section.about-us p{
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: none;
 }
+
+/* .accordion-button::after {
+    background-image: url(../images/icon-plus.svg);
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('../images/icon-plus.svg');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+} */
+.accordion-button::before {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 20px;
+    content: "";
+    background-image: url('../images/icon-plus.svg');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
 .accordion-button::after{
     background-image: url('../images/icon-plus.svg');
-}
-.accordion-button::before{
-    background-image: url('../images/icon-plus.svg');
-}
-.accordion-button:not(.collapsed)::after{
-    background-image: url('../images/icon-plus.svg');
+    display: none;
 }
 .accordion-button:not(.collapsed)::before{
     background-image: url('../images/icon-plus.svg');
 }
+
+
 
 /* section footer  */
 section.footer{
