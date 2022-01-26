@@ -263,6 +263,7 @@ ul.quarter{
     border-radius: 20px !important;
     padding: 34px;
     max-width: 424px;
+    margin-left: 42px;
 }
 .accordion-item {
     border-radius: 20px !important;
