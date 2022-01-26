@@ -5,8 +5,6 @@ const swiper = new Swiper('#sw-1', {
     loop: true,
     autoplay: {
       delay: 2000,
-    // reverseDirection: true
-
     }
   });
   const swiper2 = new Swiper('#sw-2', {
@@ -16,8 +14,7 @@ const swiper = new Swiper('#sw-1', {
     loop: true,
     autoplay: {
       delay: 2000,
-    reverseDirection: true
-
+      reverseDirection: true
     }
   });
 

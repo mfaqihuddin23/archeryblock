@@ -103,6 +103,7 @@ p{
     color: #FFFFFF;
 }
 
+
 /* button  */
 .btn{
     font-style: normal;
@@ -144,7 +145,7 @@ section.hero img{
 section.archer{
     padding: 130px 0px 170px;
 }
-section.archer p{
+.arrow-div{
     max-width: 260px;
 }
 .icon-circle{
@@ -192,10 +193,11 @@ section.about-us h4{
     color: #01999A;
 }
 section.about-us p{
-    color: rgba(100, 202, 188, 0.6);
+    color: #01999A;
 }
-.p-time{
-    color: #01999A !important;
+ul.quarter{
+    color: #01999A;
+    padding-left: 1rem;
 }
 .year-wrap{
     background: url('../images/img-btn-roadmap.svg');
@@ -210,7 +212,8 @@ section.about-us p{
     background: linear-gradient(97.71deg, rgba(255, 255, 255, 0.9) 21.7%, rgba(255, 255, 255, 0.9) 100.77%);
     box-shadow: 0px 60px 73px -31px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
-    padding: 71px 36px 38px;
+    padding: 55px 35px 41px;
+    height: 300px;
 }
 .logo-block{
     background: #EAF6FA;
@@ -293,8 +296,17 @@ section.footer{
     background: linear-gradient(80.24deg, #408CFF 13.46%, #08B0C7 93.72%);
     box-shadow: 0px 37px 79px rgba(0, 0, 0, 0.15);
 }
+section.footer .container{
+    padding: 121px 0px 65px;
+}
+.footer-orn{
+    background: url('../images/bg-footer.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
 .footer-logo{
-    margin-top: -85px;
+    position: absolute;
+    margin-top: -190px;
 }
 section.footer p{
     font-family: Montserrat;
@@ -314,6 +326,10 @@ section.footer p{
     /* or 183% */
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+}
+.icon-wrap{
+    max-width: 24px;
+    margin-right: 20px;
 }
 
 
