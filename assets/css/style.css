@@ -311,6 +311,7 @@ ul.quarter{
 }
 .accordion-item {
     border-radius: 20px !important;
+    width: 816px;
 }
 .accordion-button{
     font-style: normal;
@@ -321,8 +322,14 @@ ul.quarter{
     color: #01999A;
     border-radius: 20px !important;
     padding: 34px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    color: #01999A;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: none;
 }
 .accordion-button:not(.collapsed){
