@@ -177,13 +177,70 @@
             </div>
           </div>
         </div>
-        <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
-        <div class="row mt-5">
-          <div class="col-5">
-            <!-- <img src="assets/images/sample-diagram.svg" alt=""> -->
+        <!-- <div class="legend-container"></div> -->
+        <div class="row mt-5 pt-5">
+          <div class="col-5 d-flex flex-column justify-content-center">
+            <canvas class="myChart" id="myChart" width="400" height="400"></canvas>
           </div>
-          <div class="col-6 offset-1">
-            <!-- <img src="assets/images/sample-diagram.svg" alt=""> -->
+          <div class="col-3 offset-1 d-flex flex-column justify-content-center">
+            <div onclick="toggleData(0)" class="card-legend d-flex my-4">
+              <div id="value1" class="legend-color"></div>
+              <div id="item-value1" class="item-legend">
+                <h5>Treasury</h5>
+                <p class="p-13">17%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(1)" class="card-legend d-flex my-4">
+              <div id="value2" class="legend-color"></div>
+              <div id="item-value2" class="item-legend">
+                <h5>Marketing</h5>
+                <p class="p-13">10%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(2)" class="card-legend d-flex my-4">
+              <div id="value3" class="legend-color"></div>
+              <div id="item-value3" class="item-legend">
+                <h5>Private Sale</h5>
+                <p class="p-13">20%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(3)" class="card-legend d-flex my-4">
+              <div id="value4" class="legend-color"></div>
+              <div id="item-value4" class="item-legend">
+                <h5>Public Sale</h5>
+                <p class="p-13">10%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex flex-column justify-content-center">
+            <div onclick="toggleData(4)" class="card-legend d-flex my-4">
+              <div id="value5" class="legend-color"></div>
+              <div id="item-value5" class="item-legend">
+                <h5>Team</h5>
+                <p class="p-13">10%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(5)" class="card-legend d-flex my-4">
+              <div id="value6" class="legend-color"></div>
+              <div id="item-value6" class="item-legend">
+                <h5>Liquidity</h5>
+                <p class="p-13">10%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(6)" class="card-legend d-flex my-4">
+              <div id="value7" class="legend-color"></div>
+              <div id="item-value7" class="item-legend">
+                <h5>Seed</h5>
+                <p class="p-13">10%</p>
+              </div>
+            </div>
+            <div onclick="toggleData(7)" class="card-legend d-flex my-4">
+              <div id="value8" class="legend-color"></div>
+              <div id="item-value8" class="item-legend">
+                <h5>Staking & Farming</h5>
+                <p class="p-13">18%</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -468,7 +525,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/slider-swip.js"></script>
     <script src="assets/js/piechart.js"></script>
-    <script src="assets/js/utils-chart.js"></script>
+    <!-- <script src="assets/js/utils-chart.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
       const myChart = new Chart(
