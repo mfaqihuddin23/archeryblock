@@ -245,6 +245,33 @@ section.tokenomics{
     width: 5px;
     margin-right: 24px;
 }
+.chart-container{
+    height: 600px;
+    /* padding: 60px 0px; */
+}
+.token-button{
+    background: #9DA9AB;
+    border: 3px solid #FFFFFF;
+    height: 23px;
+    width: 23px;
+    border-radius: 20px;
+    margin-right: 16px;
+}
+.nav-pills .nav-link{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.nav-pills .nav-link.active{
+    background-color: unset;
+}
+.nav-pills .nav-link.active .token-button{
+    background-color: #FF3F3F;
+}
+
 
 
 /* section about us  */
@@ -295,7 +322,10 @@ ul.quarter{
     border-radius: 35px;
     height:  85px;
     width: 263px;
+    max-width: 263px;
+    min-width: 263px;
     padding: 29px 50px;
+    margin: 0px 28px;
 }
 .accordion-body{
     font-style: normal;
@@ -312,6 +342,7 @@ ul.quarter{
 .accordion-item {
     border-radius: 20px !important;
     width: 816px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .accordion-button{
     font-style: normal;
@@ -322,19 +353,19 @@ ul.quarter{
     color: #01999A;
     border-radius: 20px !important;
     padding: 34px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: unset;
 }
 .accordion-button:focus{
     box-shadow: none;
 }
 .accordion-button:not(.collapsed){
     color: #01999A;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: unset;
     box-shadow: none;
 }
 .accordion-button:not(.collapsed){
     color: #01999A;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: unset;
     box-shadow: none;
 }
 

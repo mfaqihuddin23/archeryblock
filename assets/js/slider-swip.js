@@ -15,7 +15,8 @@ const swiper = new Swiper('#sw-1', {
     autoplay: {
       delay: 2000,
       reverseDirection: true
-    }
+    },
+    
   });
 
   

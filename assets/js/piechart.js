@@ -1,131 +1,179 @@
-const getOrCreateLegendList = (chart, id) => {
-  const legendContainer = document.getElementById(id);
-  let listContainer = legendContainer.querySelector('ul');
-
-  if (!listContainer) {
-    listContainer = document.createElement('ul');
-    listContainer.style.display = 'flex';
-    listContainer.style.flexDirection = 'row';
-    listContainer.style.margin = 0;
-    listContainer.style.padding = 0;
-
-    legendContainer.appendChild(listContainer);
-  }
-
-  return listContainer;
-};
-
-const htmlLegendPlugin = {
-  id: 'htmlLegend',
-  afterUpdate(chart, args, options) {
-    const ul = getOrCreateLegendList(chart, options.containerID);
-
-    // Remove old legend items
-    while (ul.firstChild) {
-      ul.firstChild.remove();
-    }
-
-    // Reuse the built-in legendItems generator
-    const items = chart.options.plugins.legend.labels.generateLabels(chart);
-
-    items.forEach(item => {
-      const li = document.createElement('li');
-      li.style.alignItems = 'center';
-      li.style.cursor = 'pointer';
-      li.style.display = 'flex';
-      li.style.flexDirection = 'row';
-      li.style.marginLeft = '10px';
-
-      li.onclick = () => {
-        const {type} = chart.config;
-        if (type === 'pie' || type === 'doughnut') {
-          // Pie and doughnut charts only have a single dataset and visibility is per item
-          chart.toggleDataVisibility(item.index);
-        } else {
-          chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
-        }
-        chart.update();
-      };
-
-      // Color box
-      const boxSpan = document.createElement('span');
-      boxSpan.style.background = item.fillStyle;
-      boxSpan.style.borderColor = item.strokeStyle;
-      boxSpan.style.borderWidth = item.lineWidth + 'px';
-      boxSpan.style.display = 'inline-block';
-      boxSpan.style.height = '20px';
-      boxSpan.style.marginRight = '10px';
-      boxSpan.style.width = '20px';
-
-      // Text
-      const textContainer = document.createElement('p');
-      textContainer.style.color = item.fontColor;
-      textContainer.style.margin = 0;
-      textContainer.style.padding = 0;
-      textContainer.style.textDecoration = item.hidden ? 'line-through' : '';
-
-      const text = document.createTextNode(item.text);
-      textContainer.appendChild(text);
-
-      li.appendChild(boxSpan);
-      li.appendChild(textContainer);
-      ul.appendChild(li);
-    });
-  }
-};
+const ctx = document.getElementById('myChart');
+const ctx2 = document.getElementById('myChart2');
 
 
+// const labels = ['Treasury', 'Marketing', 'Private Sale', 'Public Sale', 'Team', 'Liquidity', 'Seed', 'Staking & Farming'];
 
-const labels = ['Treasury', 'Marketing', 'Private Sale', 'Public Sale', 'Team', 'Liquidity', 'Seed', 'Staking & Farming'];
+//   const data = {
+//     labels: labels,
+//     datasets: [{
+//       label: 'Tokenomics',
+//       backgroundColor: [
+//         '#FF8099',
+//         '#1ED9F3',
+//         '#3BFFDC',
+//         '#FFF1A7',
+//         '#E498FF',
+//         '#AF89FF',
+//         '#FAEBFF',
+//         '#F1426D'
+//     ],
+//       borderColor: [
+//         '#FF8099',
+//         '#1ED9F3',
+//         '#3BFFDC',
+//         '#FFF1A7',
+//         '#E498FF',
+//         '#AF89FF',
+//         '#FAEBFF',
+//         '#F1426D'
+//     ],
+//       data: [17, 10, 20, 10, 10, 5, 10, 18],
+//     }]
+//   };
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Tokenomics',
-      backgroundColor: [
-        '#FF8099',
-        '#1ED9F3',
-        '#3BFFDC',
-        '#FFF1A7',
-        '#E498FF',
-        '#AF89FF',
-        '#FAEBFF',
-        '#F1426D'
-    ],
-      borderColor: [
-        '#FF8099',
-        '#1ED9F3',
-        '#3BFFDC',
-        '#FFF1A7',
-        '#E498FF',
-        '#AF89FF',
-        '#FAEBFF',
-        '#F1426D'
-    ],
-      data: [17, 10, 20, 10, 10, 5, 10, 18],
-    }]
-  };
+// const config = {
+//   type: 'doughnut',
+//   data: data,
+//   options: {
+//     responsive: true,
+//     plugins: {
+//       legend: {
+//         display: false,
+//         position: 'right',
+//       },
+      
+//       // title: {
+//       //   // ID of the container to put the legend in
+//       //   containerID: 'legend-container',
+//       //   display: false,
+//       //   text: 'Chart.js Doughnut Chart'
+//       // }
+//     }
+//   },
+// };
 
-const config = {
+const myChart = new Chart(ctx, {
   type: 'doughnut',
-  data: data,
+  data: {
+      labels: ['Treasury', 'Marketing', 'Private Sale', 'Public Sale', 'Team', 'Liquidity', 'Seed', 'Staking & Farming'],
+      datasets: [{//0
+          label: 'Tokenomics',
+          data: [17, 10, 20, 10, 10, 10, 10, 18],
+          backgroundColor: [
+            '#FF8099',
+            '#1ED9F3',
+            '#3BFFDC',
+            '#FFF1A7',
+            '#E498FF',
+            '#AF89FF',
+            '#FAEBFF',
+            '#F1426D',
+          ],
+          borderColor: [
+            '#FF8099',
+            '#1ED9F3',
+            '#3BFFDC',
+            '#FFF1A7',
+            '#E498FF',
+            '#AF89FF',
+            '#FAEBFF',
+            '#F1426D',
+          ],
+          borderWidth: 1
+      },]
+  },
   options: {
-    responsive: true,
-    plugins: {
-      legend: {
-        display: false,
-        position: 'right',
+      plugins: {
+          legend: {
+              display: false, 
+          },
+          tooltip: {
+              enabled: true,
+              // external: externalTooltipHandler,
+          }
       },
       
-      // title: {
-      //   // ID of the container to put the legend in
-      //   containerID: 'legend-container',
-      //   display: false,
-      //   text: 'Chart.js Doughnut Chart'
-      // }
-    }
+  }
+});
+
+const myChart2 = new Chart(ctx2, {
+  type: 'line',
+  data: {
+      labels: ['Seed Sale', 'Team', 'Public Sale', 'Private sale', 'Marketing', ],
+      datasets: [{//0
+          label: 'Seed Sale',
+          data: [0, 13, 23, 25, 32, 43],
+          backgroundColor: [
+              '#42C9F4',
+          ],
+          borderColor: [
+            '#42C9F4',
+          ],
+          borderWidth: 1
+      },{//1
+          label: 'Team',
+          data: [0, 29, 14, 16, 32, 17],
+          backgroundColor: [
+              '#FF6D01',
+          ],
+          borderColor: [
+              '#FF6D01',
+          ],
+          borderWidth: 1
+      },{//2
+          label: 'Public Sale',
+          data: [0, 13, 43, 35, 22, 33],
+          backgroundColor: [
+              '#47CF6A',
+          ],
+          borderColor: [
+              '#47CF6A',
+          ],
+          borderWidth: 1
+      },{//3
+          label: 'Private sale',
+          data: [0, 15, 31, 25, 12, 32],
+          backgroundColor: [
+              '#FBBC04',
+          ],
+          borderColor: [
+              '#FBBC04',
+          ],
+          borderWidth: 1
+      },{//4
+          label: 'Marketing',
+          data: [0, 39, 23, 15, 32, 13],
+          backgroundColor: [
+              '#EA4335',
+          ],
+          borderColor: [
+              '#EA4335',
+          ],
+          borderWidth: 1
+      },]
   },
-};
+  options: {
+      plugins: {
+        responsive: true,
+        legend: {
+          display: true,
+          position: 'top', 
+        },
+        tooltip: {
+          enabled: true,
+          // external: externalTooltipHandler,
+        }
+      },
+      scales: {
+        y: {
+            beginAtZero: true
+        }
+    }
+  }
+});
+
+
 
 const value1 = document.getElementById('value1');
 const value2 = document.getElementById('value2');
@@ -153,3 +201,8 @@ const itemvalue5 = document.getElementById('item-value5');
 const itemvalue6 = document.getElementById('item-value6');
 const itemvalue7 = document.getElementById('item-value7');
 const itemvalue8 = document.getElementById('item-value8');
+
+function toggleData(value){
+  console.log(value);
+ 
+}
