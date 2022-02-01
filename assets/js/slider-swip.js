@@ -21,7 +21,17 @@ const swiper = new Swiper('#sw-1', {
 
   const swiper3 = new Swiper('#sw-3', {
     // Optional parameters
-    slidesPerView:1,
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+  const swiper4 = new Swiper('#sw-4', {
+    // Optional parameters
+    slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
     scrollbar: {

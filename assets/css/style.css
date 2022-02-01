@@ -8,7 +8,7 @@ body{
 /* Global CSS  */
 
 .swiper {
-    /* width: 1440px; */
+    /* width: 100vw; */
     /* height: 300px; */
     overflow-y: unset !important;
     overflow-x: hidden !important;
@@ -52,7 +52,7 @@ body{
     display: flex;
 }
 .dekstop{
-    display: none;
+    display: none !important;
 }
 .navbar-brand{
     /* margin-top: 45px; */
@@ -213,10 +213,10 @@ section.hero img{
 
 /* Archer section  */
 section.archer{
-    padding: 130px 0px 170px;
+    padding: 130px 0px;
 }
 .arrow-div{
-    max-width: 189px;
+    max-width: 200px;
     overflow-x: scroll;
 }
 .icon-circle{
@@ -231,7 +231,7 @@ section.archer{
 section.tokenomics{
     background: linear-gradient(80.24deg, #408CFF 13.46%, #08B0C7 93.72%);
     box-shadow: 0px 37px 79px rgba(0, 0, 0, 0.15);
-    padding: 160px 0px;
+    padding: 130px 0px;
 }
 .grad-icon{
     max-width: 34px;
@@ -296,10 +296,11 @@ section.tokenomics{
 
 /* section about us  */
 section.about-us{
-    background: url('../images/bg-roadmap.png');
+    background: url('../images/bg-roadmap-mobile.png');
     background-repeat: no-repeat;
     background-position: top center;
-    padding: 240px 0px 364px;
+    background-size: cover;
+    padding: 51px 0px 182px;
 }
 section.about-us .row{
     overflow-x: auto;
@@ -312,11 +313,11 @@ section.about-us .row{
     max-width: 1440px !important;
     padding-left: 0px;
     padding-right: 0px;
+    /* padding: 50px 0 ; */
 }
 section.about-us h2.text-center{
     color: #12417F;
-    margin-top: 240px;
-    margin-bottom: 69px;
+    margin: 51px 0;
 }
 section.about-us h4{
     color: #01999A;
@@ -327,6 +328,9 @@ section.about-us p{
 ul.quarter{
     color: #01999A;
     padding-left: 1rem;
+}
+.year-content{
+    width: 90vw;
 }
 .year-wrap{
     background: url('../images/img-btn-roadmap.svg');
@@ -431,6 +435,12 @@ ul.quarter{
     background-image: url('../images/icon-plus.svg');
 }
 
+.overlay-bot{
+    width: 100%;
+    height: 182px;
+    background: linear-gradient(180deg, #0283F7 0%, rgba(0, 0, 0, 0) 96.13%);
+    transform: rotate(-180deg);
+}
 
 
 /* section footer  */
