@@ -270,18 +270,20 @@ section.tokenomics{
 .token-button{
     background: #9DA9AB;
     border: 3px solid #FFFFFF;
-    height: 23px;
-    width: 23px;
+    height: 18px;
+    width: 18px;
     border-radius: 20px;
-    margin-right: 16px;
+    margin-right: 12px;
 }
 .nav-pills .nav-link{
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 19px;
+    line-height: 29px;
     color: #FFFFFF;
+    margin: 0 0;
+    padding: 0 0;
 }
 .nav-pills .nav-link.active{
     background-color: unset;
@@ -472,9 +474,9 @@ section.footer p{
     margin-right: 20px;
 }
 
-.container{
-        max-width: 95%;
-    }
+/* .container{
+        max-width: 99%;
+    } */
 
 /* Breakpoints  */
 
