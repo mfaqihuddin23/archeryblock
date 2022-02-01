@@ -81,6 +81,22 @@ body{
     /* identical to box height */
     color: #FFFFFF;
 }
+.btn:hover{
+    color:#FFFFFF;
+}
+.dropdown-menu{
+    background-color: unset;
+    border: unset;
+    color: #FFFFFF;
+}
+.dropdown-item{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 22px;
+}
 
 /* typography */
 h1{
