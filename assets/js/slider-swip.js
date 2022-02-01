@@ -1,6 +1,6 @@
 const swiper = new Swiper('#sw-1', {
     // Optional parameters
-    slidesPerView:5,
+    slidesPerView:3,
     direction: 'horizontal',
     loop: true,
     autoplay: {
@@ -9,7 +9,7 @@ const swiper = new Swiper('#sw-1', {
   });
   const swiper2 = new Swiper('#sw-2', {
     // Optional parameters
-    slidesPerView:5,
+    slidesPerView:3,
     direction: 'horizontal',
     loop: true,
     autoplay: {
@@ -19,4 +19,12 @@ const swiper = new Swiper('#sw-1', {
     
   });
 
-  
+  const swiper3 = new Swiper('#sw-3', {
+    // Optional parameters
+    slidesPerView:1,
+    direction: 'horizontal',
+    loop: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
