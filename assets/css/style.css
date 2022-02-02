@@ -523,11 +523,17 @@ section.footer p{
         background-position: top center;
     }
     .navbar-nav{
+        margin-top: 120px;
         background: unset;
     }
     .navbar-brand{
-        margin-top: 75px;
+        /* margin-top: 75px; */
         max-width: 140px;
+    }
+    .dropdown-menu{
+        background-color: #0475D0;
+        border: unset;
+        color: #FFFFFF;
     }
     
 
@@ -567,10 +573,7 @@ section.footer p{
     .btn-primary{
         min-width: 206px;
     }
-
-    .bow{
-        height: 836px;
-    }
+    
 
     .arrow-div{
         max-width: 260px;
