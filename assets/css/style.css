@@ -26,14 +26,14 @@ body{
 
   
 /* navbar  */
-.container-fluid{
+/* .container-fluid{
     width: 90%;
-}
+} */
 .navbar{
     position: absolute;
     background: url('../images/bg-navbar-mobile.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     background-position: top center;
 
     width: 100%;
@@ -58,8 +58,7 @@ body{
     display: none !important;
 }
 .navbar-brand{
-    /* margin-top: 45px; */
-    max-width: 45px;
+    max-width: 35px;
 }
 .nav-item{
     margin-bottom: 16px;
@@ -468,7 +467,8 @@ section.footer{
     box-shadow: 0px 37px 79px rgba(0, 0, 0, 0.15);
 }
 section.footer .container{
-    padding: 121px 0px 65px;
+    padding-top: 121px;
+    padding-bottom: 65px;
 }
 .footer-orn{
     background: url('../images/bg-footer.png');
@@ -509,17 +509,55 @@ section.footer p{
 
 /* Breakpoints  */
 
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+    .arrow-div{
+        max-width: 300px;
+    }
+}
 
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+    .arrow-div{
+        max-width: 350px;
+    }
+}
 
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    /* typography */
+    h1{
+        font-size: 72px;
+    }
+    h2{
+        font-size: 64px;
+    }
+    h3{
+        font-size: 48px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    
+    /* button  */
+    .btn{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .btn-primary{
+        min-width: 206px;
+    }
+
+    .arrow-div{
+        max-width: 260px;
+    }
+}
 
 @media (min-width: 1200px) { 
     
- }
+}
 
 @media (min-width: 1400px) {
     
-  }
+}
 

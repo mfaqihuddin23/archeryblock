@@ -3,19 +3,19 @@ const swiper = new Swiper('#sw-1', {
     slidesPerView:3,
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-      delay: 2000,
-    }
+    // autoplay: {
+    //   delay: 2000,
+    // }
   });
   const swiper2 = new Swiper('#sw-2', {
     // Optional parameters
     slidesPerView:3,
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-      delay: 2000,
-      reverseDirection: true
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   reverseDirection: true
+    // },
     
   });
 
