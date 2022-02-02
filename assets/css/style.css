@@ -26,9 +26,7 @@ body{
 
   
 /* navbar  */
-/* .container-fluid{
-    width: 90%;
-} */
+
 .navbar{
     position: absolute;
     background: url('../images/bg-navbar-mobile.svg');
@@ -486,8 +484,7 @@ section.footer p{
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 33px;
-    /* or 183% */
+    line-height: 183%;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
@@ -515,6 +512,25 @@ section.footer p{
 }
 
 @media (min-width: 992px) {
+    /* navbar  */
+    .container-fluid{
+        height: 97px;
+    }
+    .navbar{
+        background: url('../images/bg-navbar.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: top center;
+    }
+    .navbar-nav{
+        background: unset;
+    }
+    .navbar-brand{
+        margin-top: 75px;
+        max-width: 140px;
+    }
+    
+
     /* typography */
     h1{
         font-size: 72px;
@@ -612,17 +628,7 @@ section.footer p{
         font-size: 18px;
         padding: 34px;
     }
-    .faq-container{
-        z-index: 1;
-    }
-    .overlay-bot{
-        margin-top: -305px;
-        width: 100%;
-        height: 670px;
-        background: linear-gradient(180deg, #0283F7 0%, rgba(0, 0, 0, 0) 96.13%);
-        transform: rotate(-180deg);
-        z-index: 0;
-    }
+    
 }
 
 @media (min-width: 1200px) { 
