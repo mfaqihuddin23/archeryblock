@@ -255,7 +255,7 @@ section.tokenomics{
     max-width: 34px;
 }
 .grad-box{
-    padding: 24px 24px 10px;
+    padding: 24px 24px;
     background: linear-gradient(97.71deg, rgba(255, 255, 255, 0.2) 21.7%, rgba(255, 255, 255, 0) 100.77%);
     border: 4px solid #00FFF0;
     box-shadow: 0px 60px 73px -31px rgba(0, 0, 0, 0.25);
@@ -538,6 +538,17 @@ section.footer p{
     h5{
         font-size: 18px;
     }
+
+    p{
+        font-size: 16px;
+    }
+    .p-18{
+        font-size: 18px;
+    }
+    .p-12{
+        font-size: 12px;
+        max-width: 278px;
+    }
     
     /* button  */
     .btn{
@@ -550,6 +561,43 @@ section.footer p{
 
     .arrow-div{
         max-width: 260px;
+    }
+
+    /* Tokenomics section  */
+    section.tokenomics{
+        padding: 160px 0px;
+    }
+    .grad-icon{
+        max-width: 56px;
+    }
+    .grad-box{
+        padding: 40px 50px;
+    }
+    .token-button{
+        height: 23px;
+        width: 23px;
+    }
+    .nav-pills .nav-link{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .logo-block{
+        height:  85px;
+        width: 263px;
+        max-width: 263px;
+        min-width: 263px;
+        padding: 29px 50px;
+        margin: 0px 28px;
+    }
+
+    /* section about us  */
+    section.about-us{
+        background: url('../images/bg-roadmap.png');
+        padding: 240px 0px 364px;
+    }
+    .our-partners{
+        padding: 50px 0 ;
     }
 }
 
