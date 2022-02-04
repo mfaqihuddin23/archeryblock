@@ -133,6 +133,10 @@ body.offcanvas-active{
     color: #FFFFFF !important;
     margin: 0px 1rem;
 }
+.btn-close{
+    background: url('../images/eva_arrow-back-outline.svg');
+    background-repeat: no-repeat;
+}
 .btn-menu{
     background:url('../images/menu-alt.svg');
     background-repeat: no-repeat;
@@ -303,6 +307,9 @@ section.hero img{
 section.archer{
     padding: 130px 0px;
 }
+section.archer .swiper-slide{
+    width: 70%;
+}
 .arrow-div{
     max-width: 200px;
     overflow-x: scroll;
@@ -442,6 +449,10 @@ ul.quarter{
     margin: 0px 28px;
 }
 
+.accordion{
+    width: 70%;
+    max-width: 816px;
+}
 .accordion-body{
     font-style: normal;
     font-weight: 500;
@@ -451,8 +462,8 @@ ul.quarter{
     color: #01999A;
     border-radius: 20px !important;
     padding: 14px;
-    /* max-width: 100%; */
-    /* margin-left: 42px; */
+    max-width: 234px;
+    margin-left: 42px;
 }
 .accordion-item {
     border-radius: 20px !important;
@@ -538,9 +549,10 @@ section.footer .row{
     margin-right: 0;
 }
 .footer-orn{
-    background: url('../images/bg-footer.png');
+    background: url('../images/footer-mobile.png');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 50% 180%;
+    padding-bottom: 360px;
 }
 .footer-logo{
     position: absolute;
@@ -705,12 +717,18 @@ section.footer p{
     }
     .accordion-item {
         border-radius: 20px !important;
-        width: 816px;
+        /* width: 816px; */
         background-color: rgba(255, 255, 255, 0.9);
     }
     .accordion-button{
         font-size: 18px;
         padding: 34px;
+    }
+    .footer-orn{
+        background: url('../images/bg-footer.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-bottom: 0px;
     }
     
 }

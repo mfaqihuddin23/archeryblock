@@ -71,12 +71,13 @@
     </nav>
     <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg d-lg-none navbar-dark">
       <div class="container-fluid">
-         <div class="offcanvas-header">  
-         <button class="btn-close float-end"></button>
-       </div>
-       <div class="brand-box mb-5">
-        <a class="navbar-brand" href="#"><img src="assets/images/img-logo.png" alt="" class="w-100 logo-brand"></a>
-       </div>
+        <div class="offcanvas-header d-flex align-items-center mb-4">  
+          <div class="brand-box">
+            <a class="navbar-brand" href="#"><img src="assets/images/img-logo.png" alt="" class="w-100 logo-brand"></a>
+          </div>
+          <button class="btn-close float-end"></button>
+        </div>
+        
        <ul class="navbar-nav">
          <!-- <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li> -->
          <li class="nav-item"><a class="nav-link" href="#"> Vision </a></li>
@@ -119,10 +120,10 @@
             <img src="assets/images/img-vision.png" alt="" class="w-100">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0">
-            <div class="text-wrap">
+            <div class="text-wrap d-flex flex-column align-items-center align-items-lg-start">
               <h2 class="text-center text-lg-start mb-5 mb-lg-4">What is our<br><span class="text-line ">Vision & Mission</span></h2>
               <h4 class="text-center text-lg-start">Our Mision</h4>
-              <p class="p-18 text-center text-lg-start">ArcheryBlock was created with the desire to expand the boundaries of fighting video games and with the firm intention of marking a turning point in the recreational use of blockchain technology. <a class="readmore" href="https://whitepaper.archeryblock.io/vision-mission">Read more </a></p>
+              <p class="p-18 text-center text-lg-start">ArcheryBlock was created with the desire to expand the boundaries of fighting video games and with the firm intention of marking a turning point in the recreational use of blockchain technology. <br> <a class="readmore" href="https://whitepaper.archeryblock.io/vision-mission">Read more </a></p>
               <h4 class="text-center text-lg-start mt-4">Our Vision</h4>
               <p class="p-18 text-center text-lg-start">We believe in a future where it is possible to become a professional archer and make a living from it.
                 We believe in the creation of an in-game economy based on blockchain, driven by the creativity and competitive spirit of our players. <a class="readmore" href="https://whitepaper.archeryblock.io/vision-mission">Read more </a></p>
@@ -149,8 +150,7 @@
                 <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                   <img src="assets/images/icon-arrow.svg" alt="">
                 </div>
-                <h3>Arrow</h3>
-                <h3 class="text-line mb-3">NFTs</h3>
+                <h3>Arrow <span class="text-line ">NFTs</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
             </div>
@@ -159,8 +159,7 @@
                 <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                   <img src="assets/images/icon-profile.svg" alt="">
                 </div>
-                <h3>Arrow</h3>
-                <h3 class="text-line mb-3">Character</h3>
+                <h3>Arrow <span class="text-line mb-3">Character</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
             </div>
@@ -169,14 +168,13 @@
                 <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                   <img src="assets/images/icon-airdrop.svg" alt="">
                 </div>
-                <h3>Arrow</h3>
-                <h3 class="text-line mb-3">Airdrops</h3>
+                <h3>Arrow <span class="text-line mb-3">Airdrops</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
             </div>
           </div>
           <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
         <div class="row d-none d-lg-flex align-items-center mt-5">
           <div class="col-lg-4">
@@ -184,8 +182,7 @@
               <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                 <img src="assets/images/icon-arrow.svg" alt="">
               </div>
-              <h3>Arrow</h3>
-              <h3 class="text-line mb-3">NFTs</h3>
+              <h3>Arrow <span class="text-line ">NFTs</span></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
           </div>
@@ -194,8 +191,7 @@
               <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                 <img src="assets/images/icon-profile.svg" alt="">
               </div>
-              <h3>Arrow</h3>
-              <h3 class="text-line mb-3">Character</h3>
+              <h3>Arrow <span class="text-line mb-3">Character</span></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
           </div>
@@ -204,8 +200,7 @@
               <div class="icon-circle d-flex align-items-center justify-content-center mb-4">
                 <img src="assets/images/icon-airdrop.svg" alt="">
               </div>
-              <h3>Arrow</h3>
-              <h3 class="text-line mb-3">Airdrops</h3>
+              <h3>Arrow <span class="text-line mb-3">Airdrops</span></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
           </div>
@@ -365,17 +360,17 @@
                   <!-- <p class="p-time text-center mt-5">Oct 13th 2021 <br> 22:00</p> -->
                   <ul class="quarter">
                     <li>
-                      <p class="p-12 mb-0">Successful completion of seed, private and public sale.</p>
+                      <p class="p-18 mb-0">Successful completion of seed, private and public sale.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Organizing and launching marketing campaigns.</p>
+                      <p class="p-18 mb-0">Organizing and launching marketing campaigns.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">CoinMarketCap and CoinGecko listings.</p>
+                      <p class="p-18 mb-0">CoinMarketCap and CoinGecko listings.</p>
                     </li>
-                      <p class="p-12 mb-0">Announcement of partnerships. </p>
+                      <p class="p-18 mb-0">Announcement of partnerships. </p>
                     <li>
-                      <p class="p-12 mb-0">Launch web version of the game.</p>
+                      <p class="p-18 mb-0">Launch web version of the game.</p>
                     </li>
                   </ul>
                 </div>
@@ -387,17 +382,17 @@
                 <div class="year-box">
                   <ul class="quarter">
                     <li>
-                      <p class="p-12 mb-0">Organizing incentive campaigns to create interaction for the game.</p>
+                      <p class="p-18 mb-0">Organizing incentive campaigns to create interaction for the game.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Announcement of strategic partnerships.</p>
+                      <p class="p-18 mb-0">Announcement of strategic partnerships.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Exchange listing and setting up the market maker.</p>
+                      <p class="p-18 mb-0">Exchange listing and setting up the market maker.</p>
                     </li>
-                      <p class="p-12 mb-0">Addition of new maps for the game.</p>
+                      <p class="p-18 mb-0">Addition of new maps for the game.</p>
                     <li>
-                      <p class="p-12 mb-0">Development of NFT marketplace.</p>
+                      <p class="p-18 mb-0">Development of NFT marketplace.</p>
                     </li>
                   </ul>
                 </div>
@@ -411,17 +406,17 @@
                 <div class="year-box">
                   <ul class="quarter">
                     <li>
-                      <p class="p-12 mb-0">Beginning of work for VR headset.</p>
+                      <p class="p-18 mb-0">Beginning of work for VR headset.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Graphics improvements in the game.</p>
+                      <p class="p-18 mb-0">Graphics improvements in the game.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Establishing the governance structure and having a say in the management of the community.</p>
+                      <p class="p-18 mb-0">Establishing the governance structure and having a say in the management of the community.</p>
                     </li>
-                      <p class="p-12 mb-0">Partnering with projects for a multiasset staking pool.</p>
+                      <p class="p-18 mb-0">Partnering with projects for a multiasset staking pool.</p>
                     <li>
-                      <p class="p-12 mb-0">Launch NFT marketplace.</p>
+                      <p class="p-18 mb-0">Launch NFT marketplace.</p>
                     </li>
                   </ul>
                 </div>
@@ -433,17 +428,17 @@
                 <div class="year-box">
                   <ul class="quarter">
                     <li>
-                      <p class="p-12 mb-0">Activating the game on the VR headset.</p>
+                      <p class="p-18 mb-0">Activating the game on the VR headset.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">Sound and graphics improvements in the game.</p>
+                      <p class="p-18 mb-0">Sound and graphics improvements in the game.</p>
                     </li>
                     <li>
-                      <p class="p-12 mb-0">New exchange listing.</p>
+                      <p class="p-18 mb-0">New exchange listing.</p>
                     </li>
-                      <p class="p-12 mb-0">New arenas and skins.</p>
+                      <p class="p-18 mb-0">New arenas and skins.</p>
                     <li>
-                      <p class="p-12 mb-0">Incentive program for new investors.</p>
+                      <p class="p-18 mb-0">Incentive program for new investors.</p>
                     </li>
                   </ul>
                 </div>
@@ -451,7 +446,7 @@
             </div>
           </div>
           <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
         <div class="row d-none d-lg-flex align-items-center">
           <div class="col-lg-3 col-12">
@@ -584,32 +579,32 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper text-center">
             <!-- Slides -->
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-asana.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-allianz.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-google.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-microsoft.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-buzzfeed.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-etrade.svg" alt="" class="w-100">
               </div>
@@ -656,32 +651,32 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper text-center">
             <!-- Slides -->
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-asana.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-tesla.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-chase.svg" alt="" class="w-100">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-lexmark.svg" alt="">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-walmart.svg" alt="">
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-between align-items-start">
+            <div class="swiper-slide mx-5 mx-xl-2 d-flex justify-content-between align-items-start">
               <div class="logo-block d-flex justify-content-center">
                 <img src="assets/images/logo-lacoste.svg" alt="">
               </div>
@@ -798,6 +793,9 @@
             </div>
           </div>
         </div>
+        <!-- <div class="img-box">
+          <img src="assets/images/bg-footer.png" alt="">
+        </div> -->
       </div>
     </section>
 
